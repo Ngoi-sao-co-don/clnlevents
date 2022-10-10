@@ -1,0 +1,413 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color: green; */
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+.clear{
+    clear: both;
+}
+/* HEADER-BANNER */
+#header-banner{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: black;
+    width: 100%;
+    height: 37.39px;
+}
+
+#header-banner .message{
+    line-height: 37.39px;
+    font-size: 10px;
+    color: #fff;
+    padding-left: 40px;
+}
+
+#header-banner .btn-direct-buyPage .btn-items{
+    line-height: 37.39px;
+    float: right;
+    padding-right: 40px;
+    font-size: 10px;
+}
+
+.btn-direct-buyPage .btn-items button{
+    background-color: black;
+    color: #fff;
+    font-size: 10px;
+    cursor: pointer;
+    margin-right: 12px;
+}
+/* DONE */
+
+
+/* HEADER - MAIN */
+#header-main{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    padding: 20px 0px;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    border-bottom: 1px solid rgba(220,220,220,0.8);
+    z-index: 1;
+}
+#header-main .logo{
+    grid-column: 2/3;
+    padding: 0px 15px;
+}
+
+#header-main .logo img{
+    display: block;
+    margin: 0 auto;
+}
+
+#header-main .sub-items ul{
+    margin-right: 80px;
+}
+
+#header-main .sub-items ul li{
+    list-style-type: none;
+    float: left;
+    padding: 0px 15px;
+}
+
+.sub-items li button{
+    background-color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    border: none;
+}
+
+li button i:hover{
+    zoom: 130%;
+}
+
+#header-main .sub-items ul{
+    float: right;
+}
+/* DONE */
+
+/* NAVIGATION */
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 13px 15px;
+}
+.nav > li{
+    display: inline-block;
+    position: relative;
+}
+.nav li a{
+    text-decoration: none;
+    color: gray;
+    font-size: 14px;
+}
+
+.nav li a:hover{
+    color: red;
+}
+
+.nav-special .sub-nav{
+    background-color: white;
+    position: absolute;
+    z-index: 2;
+    left: -15px;
+}
+
+#navigation i{
+    font-size: 8px;
+}
+
+
+.nav li:hover .sub-nav li{
+    display: block!important;
+}
+.nav-special .sub-nav li{
+    display: none;
+    list-style-type: none;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 15px;
+}
+
+.sub-nav > li > a{
+    width: 222px;
+    display: inline-block;
+}
+
+.sub-nav li{
+    position: relative;
+}
+
+
+.sub-nav li:hover .nav-collection{
+    display: block!important;
+}
+.nav-collection{
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -20px;
+    left: 222px;
+}
+
+.nav-collection a{
+    width: 200px;
+    display: inline-block;
+}
+
+/* DONE */
+
+/* VIDEO BANNER */
+#video-banner-container video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* .new-collection{
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.new-co{
+    position: relative;
+    width: 20%;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid gray;
+    margin: 0px auto;
+    bottom: 100px;
+}
+
+.ani1{
+    position: absolute;
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+}
+
+.ani2{
+    position: absolute;
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    right: 0;
+}
+
+.new-co .new-co-btn{
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+}
+
+.new-co .new-co-btn a{
+    text-decoration: none;
+    color: grey;
+    line-height: 30px;
+    display: inline-block;
+}
+
+.new-co:hover .ani1,
+.new-co:hover .ani2{
+    animation: ani-gnr 1s;
+    background-color: black;
+}
+
+/* .new-collection a:hover .ani1,
+.new-collection a:hover .ani2{
+    animation: ani-gnr 0.8s;
+    background-color: black;
+} */
+
+@keyframes ani-gnr{
+    from{
+        width: 0px;
+    }
+    to{
+        width: 100%;
+        background-color: black;
+    }
+}
+/* .new-collection a{
+    position: absolute;
+    text-align: center;
+    bottom: 130px;
+    color: gray;
+    text-decoration: none;
+    background-color: white;
+    padding: 7px 72px;
+    font-size: 14px;
+    border: 1px solid rgb(180, 175, 175);
+} */
+
+/* .new-collection a:hover{
+    animation: ani-gnr 0.8s;
+    background-color: black;
+} */
+/* DONE */
+
+/* CONTENTS */
+#contents{
+    padding: 80px 0px;
+}
+
+.title-section{
+    margin-bottom: 52px;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+}
+
+.title-section-general{
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    font-size: 16px;
+}
+
+#contents .products{
+   display: grid;
+   grid-template-columns: 25% 25% 25% 25%;
+   margin: 0px 50px;
+}
+
+
+#contents .products .product{
+  display: block;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+.products .product a{
+    color: gray;
+    font-size: 14px;
+    display: block;
+}
+
+.products .product img{
+   width: 350px;
+   height: 450px;
+}
+
+.products .product .price{
+    color: black;
+    font-size: 16px;
+}
+
+
+
+
+.products .product .product-img{
+    background-image: url(./assets/img/products/front.jpg);
+    background-size: contain;
+}
+
+.products .product .product-img:hover{
+    background-image:url(./assets/img/products/GREY-2-1-400x500.png);
+}
+/* DONE */
+#outfits{
+    padding: 80px 0px;
+}
+
+#outfits .both-modal{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#outfits .both-modal .modal .img{
+    width: 553px;
+    height: 945px;
+    background-image: url(./assets/img/modal/male-modal-hoodie-front.jpg);
+    margin: 0 auto;
+}
+
+.both-modal .modal-female .img{
+    background-image: url(./assets/img/modal/female-modal-cattee-front.jpg)!important;
+}
+
+
+#outfits .both-modal .modal .img:hover{
+    background-image: url(./assets/img/modal/male-modal-hoodie-back.jpg);
+}
+
+.both-modal .modal-female .img:hover{
+    background-image: url(./assets/img/modal/female-modal-cattee-back.jpg)!important;
+}
+/* DONE */
+
+/* FOOTER */
+footer{
+    width: 100%;
+    padding: 80px 20px;
+}
+
+footer .abc{
+    float: left;
+}
+.about-we{
+    display: inline-block;
+    width: 50%;
+    height: 50%;
+}
+
+.alike{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+/* DONE */
+
+/* MODAL */
+.modal-cart{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    display: none;
+}
+
+.main-modal-cart{
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    background-color: #fff;
+    right: 0;
+    animation: appear 0.2s linear;
+}
+
+.open{
+    display: block;
+}
+
+.main-modal-cart .header{
+    display: inline-block;
+}
+
+@keyframes appear{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
